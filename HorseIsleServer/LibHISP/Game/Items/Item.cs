@@ -10,7 +10,7 @@ namespace HISP.Game.Items
     public class Item
     {
 
-        public const int MAX_STACK = 50;
+        public const int MAX_STACK = 1000;
 
         private static List<ItemInformation> items = new List<ItemInformation>();
         private static List<ThrowableItem> throwableItems = new List<ThrowableItem>();

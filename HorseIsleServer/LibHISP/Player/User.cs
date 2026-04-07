@@ -324,14 +324,14 @@ namespace HISP.Player
         {
             get
             {
-                int baseValue = 40;
+                int baseValue = 100;
                 if (Subscribed)
                 {
                     if (OwnedRanch != null)
                     {
-                        baseValue += (20 * OwnedRanch.GetBuildingCount(4)); // Shed
-                        if (baseValue > 80) // 2 sheds max!
-                            baseValue = 80;
+                        baseValue += (100 * OwnedRanch.GetBuildingCount(4)); // Shed
+                        if (baseValue > 300) // 2 sheds max!
+                            baseValue = 300;
                     }
                 }
                 return baseValue;
@@ -343,12 +343,12 @@ namespace HISP.Player
             {
                 if (Subscribed)
                 {
-                    int baseValue = 11;
+                    int baseValue = 25;
                     if(OwnedRanch != null)
                     {
-                        baseValue += OwnedRanch.GetBuildingCount(1) * 4; // Barn
-                        baseValue += OwnedRanch.GetBuildingCount(10) * 8; // Big Barn
-                        baseValue += OwnedRanch.GetBuildingCount(11) * 12; // Gold Barn
+                        baseValue += OwnedRanch.GetBuildingCount(1) * 5; // Barn
+                        baseValue += OwnedRanch.GetBuildingCount(10) * 10; // Big Barn
+                        baseValue += OwnedRanch.GetBuildingCount(11) * 15; // Gold Barn
                     }
                     return baseValue;
                 }

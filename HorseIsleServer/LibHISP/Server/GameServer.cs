@@ -144,22 +144,22 @@ namespace HISP.Server
             // Mods Revenge
             if(totalMinutesElapsed % ((60*8)+15) == 0)
             {
-                ModsRevengeEvent = new ModsRevenge();
-                ModsRevengeEvent.StartEvent();
+                //ModsRevengeEvent = new ModsRevenge();
+                //ModsRevengeEvent.StartEvent();
             }
             
             // Isle Card Trading Game
             if(totalMinutesElapsed % (60 *2) == 0)
             {
-                IsleCardTrading = new IsleCardTradingGame();
-                IsleCardTrading.StartEvent();
+                //IsleCardTrading = new IsleCardTradingGame();
+                //IsleCardTrading.StartEvent();
             }
             
             // Water Balloon Game
             if(totalMinutesElapsed % (60 * 2) == 0)
             {
-                WaterBalloonEvent = new WaterBalloonGame();
-                WaterBalloonEvent.StartEvent();
+                //WaterBalloonEvent = new WaterBalloonGame();
+                //WaterBalloonEvent.StartEvent();
             }
             
             // Tack Shop Giveaway
